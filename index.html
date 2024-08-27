@@ -16,7 +16,7 @@
         }
 
         body {
-            background-color: #bfbeba;
+            background-color: #f5e4e3;
             color: #333;
             font-size: 16px;
             line-height: 1.6;
@@ -47,7 +47,7 @@
 
         /* Header */
         header {
-            background-color: #bfbeba;
+            background-color: #b4b4b4;
             padding: 20px 0;
             border-bottom: 1px solid #e5e5e5;
         }
@@ -63,7 +63,7 @@
         }
 
         .logo img {
-            max-width: 200px;
+            max-width: 300px;
         }
 
         nav {
@@ -78,12 +78,12 @@
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #f5e4e3;
             transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #d6a5a4;
+            color: #333;
         }
 
         /* Hero Banner Section */
@@ -103,11 +103,22 @@
         }
 
         .hero-banner h1 {
-            font-size: 80px;
-            font-weight: normal;
-            margin-bottom: 20px;
-            font-family: 'Arial', sans-serif;
-        }
+    font-size: 80px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+      
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #f5e4e3, 0 0 30px #f5e4e3, 0 0 40px #f5e4e3, 0 0 50px #f5e4e3, 0 0 60px #f5e4e3, 0 0 70px #f5e4e3;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #f5e4e3, 0 0 15px #f5e4e3, 0 0 20px #f5e4e3, 0 0 25px #f5e4e3, 0 0 30px #f5e4e3, 0 0 35px #f5e4e3;
+    }
+}
 
         .hero-banner p {
             font-size: 20px;
@@ -115,8 +126,8 @@
         }
 
         .hero-banner .cta-button {
-            background-color: #d6a5a4;
-            color: #fff;
+            background-color: #f5e4e3;
+            color: #333;
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
@@ -125,7 +136,7 @@
         }
 
         .hero-banner .cta-button:hover {
-            background-color: #c08484;
+            background-color: #efcbc9;
         }
 
         /* Featured Section */
@@ -168,7 +179,7 @@
 
         .service p {
             font-size: 12px;
-            color: #666;
+            color: #898989;
             line-height: 1.6;
         }
 
@@ -242,11 +253,11 @@
         }
 
         .slide:nth-child(1)::before {
-            background-image: url('https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/SSPROPHIR%20Event%20Stylist%20Promo%20Banner%201.png');
+            background-image: url('https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/12.png');
         }
 
         .slide:nth-child(2)::before {
-            background-image: url('https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/SSPROPHIR%20Event%20Stylist%20Promo%20Banner%202.png');
+            background-image: url('https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/13.png');
         }
 
         .slide:hover {
@@ -323,12 +334,12 @@
 
         .instagram-grid::before {
             left: 0;
-            background: linear-gradient(to right, #bfbeba 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right, #f5e4e3 0%, rgba(255, 255, 255, 0) 100%);
         }
 
         .instagram-grid::after {
             right: 0;
-            background: linear-gradient(to left, #bfbeba 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to left, #f5e4e3 0%, rgba(255, 255, 255, 0) 100%);
         }
 
         .slide-track {
@@ -375,15 +386,15 @@
         }
 
         .follow-us-button:hover {
-            background-color: #333;
-            color: #fff;
+            background-color: #d6a5a4;
+            color: #FFFFFF;
         }
 
         /* Contact Us Section */
         .contact-section-wrapper {
             width: 100vw;
             margin-left: calc(-50vw + 50%);
-            background-color: #f5e4e3;
+            background-color: #b4b4b4;
             padding: 40px 0;
             text-align: center;
         }
@@ -473,7 +484,7 @@
         .reviews-section-wrapper {
             width: 100vw;
             margin-left: calc(-50vw + 50%);
-            background-color: #f5e4e3;
+            background-color: #b4b4b4;
             padding: 40px 0;
             margin-bottom: 55px;
         }
@@ -530,7 +541,7 @@
         .review-navigation .prev,
         .review-navigation .next {
             cursor: pointer;
-            color: #d6a5a4;
+            color: #f5e4e3;
             font-size: 30px;
             padding: 10px;
             transition: color 0.3s ease;
@@ -568,7 +579,8 @@
     }
 
     .hero-banner {
-        height: auto;
+        height: 500px; /* Increase the height for mobile */
+        background-size: cover; /* Ensure the background image covers the entire banner */
         padding: 40px 20px;
     }
 
@@ -700,17 +712,17 @@
             <h2>Your Vision, Our Expertise</h2>
             <div class="services-section" id="services">
                 <div class="service">
-                    <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/B%20(47).png" alt="Social Celebrations">
+                    <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/35.png" alt="Social Celebrations">
                     <h3>Social Celebrations</h3>
                     <p>Whether it’s a birthday, anniversary, or baby shower, we design and coordinate personalized celebrations that reflect your style and create lasting memories.</p>
                 </div>
                 <div class="service">
-                    <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/B%20(46).png" alt="Weddings">
+                    <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/36.png" alt="Weddings">
                     <h3>Weddings</h3>
                     <p>We turn your dream wedding into reality, handling every detail from venue selection to decor, ensuring your special day is seamless and unforgettable.</p>
                 </div>
                 <div class="service">
-                    <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/B%20(48).png" alt="Corporate Events">
+                    <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/34.png" alt="Corporate Events">
                     <h3>Corporate Events</h3>
                     <p>From conferences to team-building events, we manage all aspects of your corporate gathering, ensuring a professional and impactful experience that aligns with your brand.</p>
                 </div>
@@ -734,17 +746,17 @@
                 <h2>Reviews</h2>
                 <div class="review-container">
                     <div class="review-slide active">
-                        <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/Reviews%20stars.png" alt="Review Stars" class="review-stars">
+                        <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/Reviews%20icons.png" alt="Review Stars" class="review-stars">
                         <p>Our wedding was flawless, thanks to their incredible planning. The decor was stunning, and everything ran smoothly. Our guests were amazed, and we couldn’t be happier with how it all turned out!.</p>
                         <h4>Emma L</h4>
                     </div>
                     <div class="review-slide">
-                        <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/Reviews%20stars.png" alt="Review Stars" class="review-stars">
+                        <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/Reviews%20icons.png" alt="Review Stars" class="review-stars">
                         <p>The birthday party they planned for my daughter was beyond perfect. The theme was spot-on, and the decorations were beautiful. The entire day was smooth and enjoyable. Highly recommend their services!</p>
                         <h4>Sarah M</h4>
                     </div>
                     <div class="review-slide">
-                        <img src="https://raw.githubusercontent.com/PaycheckBudget/EventPlanner/main/images/Reviews%20stars.png" alt="Review Stars" class="review-stars">
+                        <img src="https://raw.githubusercontent.com/PaycheckBudget/SSPROPHIRE/main/photos/Reviews%20icons.png" alt="Review Stars" class="review-stars">
                         <p>The anniversary party they organized was exceptional. The decor was elegant, and everything was perfectly timed. Our guests were impressed, and we had a wonderful time!</p>
                         <h4>Sophie M</h4>
                     </div>
